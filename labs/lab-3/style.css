@@ -1,0 +1,14 @@
+/* Lab 3 - Image Preview Styling */
+
+.image-preview {
+    display: inline-block;
+}
+
+.image-preview img {
+    border-style: solid;
+    border-width: 30px;
+    border-top-color: skyblue;
+    border-right-color: lightpink;
+    border-bottom-color: lightgreen;
+    border-left-color: #ffefd5;
+}

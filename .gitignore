@@ -1,0 +1,11 @@
+.DS_Store
+
+# Archives
+*.zip
+*.rar
+*.tar
+*.gz
+
+# IDE/Editor
+.vscode/
+.idea/
