@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Like and Dislike voting system with comments and cookie-based state management">
+  <title>Lab 6 — Like &amp; Dislike</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+    <div id="cursor-blob" class="bg-blob blob-cursor"></div>
+  </div>
+
+  <main class="container">
+    <h1 class="title">Lab 6</h1>
+    <p class="subtitle">Like or dislike</p>
+
+    <div class="vote-row">
+      <button type="button" id="like-btn" class="vote-btn" aria-label="Like">
+        <span class="emoji">👍</span><span id="like-count" class="count">0</span>
+      </button>
+      <button type="button" id="dislike-btn" class="vote-btn" aria-label="Dislike">
+        <span class="emoji">👎</span><span id="dislike-count" class="count">0</span>
+      </button>
+    </div>
+
+    <p id="vote-status" class="status-text"></p>
+
+    <h2 class="section-heading">Comments</h2>
+
+    <textarea
+      id="comment-input"
+      class="comment-box"
+      placeholder="Write a comment..."
+      maxlength="300"
+      rows="5"
+    ></textarea>
+
+    <div class="btn-row">
+      <button type="button" id="comment-btn" class="action-btn submit-btn">Submit</button>
+      <button type="button" id="reset-btn" class="action-btn clear-btn">Clear</button>
+    </div>
+
+    <p id="comment-status" class="status-text"></p>
+
+    <div id="comments-list" class="comments-list"></div>
+  </main>
+
+  <div id="confirm-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <h3 id="modal-title" class="modal-title">Reset everything?</h3>
+      <p class="modal-text">This will clear your vote and all comments.</p>
+      <div class="modal-actions">
+        <button type="button" id="modal-cancel" class="action-btn cancel-btn">Cancel</button>
+        <button type="button" id="modal-confirm" class="action-btn confirm-btn">Yes, Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
