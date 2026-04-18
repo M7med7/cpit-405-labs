@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Mohammed Rashid Alharbi — Software & AI Engineer.">
+  <title>Contact — Mohammed Alharbi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <canvas id="matrix-canvas"></canvas>
+  <div class="scanline"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><span class="prompt">~/</span>m.alharbi</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">home</a>
+        <a href="labs.html">labs</a>
+        <a href="contact.html" class="active">contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+
+    <section class="hero">
+      <div class="hero-badge"><span class="badge-dot"></span>Get in Touch</div>
+      <h1>Contact <span class="gradient-text">Me</span></h1>
+      <p class="subtitle">Feel free to reach out through any of the channels below or send a message using the form.</p>
+    </section>
+
+    <section class="section fade-in" id="contact">
+      <div class="contact-grid">
+
+        <div class="contact-info-card">
+          <h3>// connection_info</h3>
+
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <div class="contact-label">email</div>
+              <div class="contact-value">
+                <a href="mailto:Mohammed266433@gmail.com">Mohammed266433@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div>
+              <div class="contact-label">phone</div>
+              <div class="contact-value">
+                <a href="tel:+966550477799">+966 550 477 799</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div>
+              <div class="contact-label">linkedin</div>
+              <div class="contact-value">
+                <a href="https://www.linkedin.com/in/mohammed-alharbi7/" target="_blank"
+                  rel="noopener noreferrer">Mohammed Alharbi</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <div class="contact-label">github</div>
+              <div class="contact-value">
+                <a href="https://github.com/M7med7" target="_blank" rel="noopener noreferrer">M7med7</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3>// send_message()</h3>
+          <form action="https://formsubmit.co/Mohammed266433@gmail.com" method="POST" id="contact-form">
+            <input type="hidden" name="_subject" value="New message from Portfolio">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="#">
+            <input type="text" name="_honey" style="display:none">
+
+            <div class="form-group">
+              <label for="name">name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What is this about?">
+            </div>
+
+            <div class="form-group">
+              <label for="message">message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submit-btn">
+              $ send_message ⏎
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Mohammed Rashid Alharbi — CPIT 405 Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

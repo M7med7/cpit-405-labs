@@ -4,33 +4,235 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohammed Alharbi</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      color: #fff;
-    }
-
-    h1 {
-      font-size: 3rem;
-      letter-spacing: 0.05em;
-    }
-  </style>
+  <meta name="description"
+    content="Mohammed Rashid Alharbi — Software & AI Engineer portfolio. Education, skills, projects, and contact information.">
+  <title>Mohammed Alharbi — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Mohammed Alharbi</h1>
+
+  <canvas id="matrix-canvas"></canvas>
+  <div class="scanline"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><span class="prompt">~/</span>m.alharbi</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" class="active">home</a>
+        <a href="labs.html">labs</a>
+        <a href="contact.html">contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+
+    <section class="hero" id="hero">
+      <div class="hero-badge"><span class="badge-dot"></span>AI Engineer</div>
+      <h1>Mohammed Rashid <span class="gradient-text">Alharbi</span></h1>
+      <p class="subtitle">Software &amp; AI Engineer building intelligent systems, recommendation engines, LLM
+        applications, and next-gen automation tools.</p>
+      <div class="hero-info">
+        <div class="info-item">
+          <span class="icon">🎓</span>
+          <span>ID: 2239457</span>
+        </div>
+        <div class="info-item">
+          <span class="icon">📍</span>
+          <span>Jeddah, SA</span>
+        </div>
+        <div class="info-item">
+          <span class="icon">🤖</span>
+          <span>AI / ML / LLMs</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade-in" id="about">
+      <div class="section-header">
+        <div class="section-icon">🧠</div>
+        <h2>about_me</h2>
+      </div>
+      <div class="card">
+        <p>Software engineer focused on AI, intelligent systems, and practical technology solutions. Built AI projects
+          in recommendation systems, LLM-based applications, interactive experiences, and automation tools. Currently
+          pursuing a Bachelor's in Information Technology at King Abdulaziz University with a GPA of 4.68.</p>
+        <div class="ai-badges-row">
+          <span class="ai-badge"><span class="dot"></span>Neural Networks</span>
+          <span class="ai-badge"><span class="dot"></span>LLM Apps</span>
+          <span class="ai-badge"><span class="dot"></span>Recommender Systems</span>
+          <span class="ai-badge"><span class="dot"></span>Computer Vision</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade-in" id="education">
+      <div class="section-header">
+        <div class="section-icon">🎓</div>
+        <h2>education</h2>
+      </div>
+      <div class="card">
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Bachelor's in Information Technology</h3>
+            <div class="period">08/2022 – 08/2026</div>
+            <div class="location">King Abdulaziz University — Jeddah, Saudi Arabia</div>
+            <p>GPA: 4.68</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade-in" id="experience">
+      <div class="section-header">
+        <div class="section-icon">💼</div>
+        <h2>experience</h2>
+      </div>
+      <div class="card">
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>MenaML Winter School — Selected Scholar</h3>
+            <div class="period">01/2026 – 02/2026</div>
+            <div class="location">MENA Machine Learning — Thuwal, Saudi Arabia</div>
+            <ul>
+              <li>Selected as one of 300 accepted scholars from 2,300 applicants.</li>
+              <li>Completed intensive ML lectures, keynotes, and hands-on labs led by experts from Google DeepMind,
+                Apple, KAUST, and OpenAI.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <h3>Semi-Finalist — Aramco Consulting Championship 2025</h3>
+            <div class="period">09/2025 – 11/2025</div>
+            <div class="location">Aramco, EY, Deloitte &amp; Roland Berger — Dammam, Saudi Arabia</div>
+            <ul>
+              <li>Top 20 team (Top 1%) among 7,000+ participants across 10+ universities.</li>
+              <li>Solved real consulting cases through data analysis, benchmarking, and strategy.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <h3>AI Intern — KAUST Summer Program</h3>
+            <div class="period">06/2025 – 09/2025</div>
+            <div class="location">KAUST — Abha, Saudi Arabia</div>
+            <ul>
+              <li>Selected from 10,000+ applicants in an AI specialization program.</li>
+              <li>Contributed to model development and testing in real-world AI projects.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade-in" id="projects">
+      <div class="section-header">
+        <div class="section-icon">🚀</div>
+        <h2>projects</h2>
+      </div>
+      <div class="card" style="margin-bottom: 1rem;">
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>SANAD — AI-Powered Solar Design Validation System</h3>
+            <div class="period">02/2026</div>
+            <div class="location">Futurethon 2026 — 1st Place Winner, Energy Track</div>
+            <ul>
+              <li>Built an AI system to assess solar designs for compliance, defect risks, and suitability.</li>
+              <li>Developed AI workflows to analyze weather and temperature conditions for design weaknesses and safer
+                deployment.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <h3>AI-Powered Social Media Engagement System</h3>
+            <div class="period">10/2025 – 02/2026</div>
+            <div class="location">Data Science Club, KAU</div>
+            <ul>
+              <li>Built sentiment analysis to classify comments as positive, neutral, or negative.</li>
+              <li>Developed LLM-based smart replies for comments on X.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <h3>Jarir Bookstore AI Recommendation System</h3>
+            <div class="period">06/2025 – 09/2025</div>
+            <div class="location">KAUST AI Specialization Program — Capstone</div>
+            <ul>
+              <li>Built a two-stage recommender with Two-Tower retrieval and ranking for top-10 product recommendations.
+              </li>
+              <li>Benchmarked against LightGCN, LightFM, and EASE, achieving the best Recall@10 and NDCG@10.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <h3>Uni-Verse — Virtual Reality Campus</h3>
+            <div class="period">04/2025</div>
+            <div class="location">Unithon 2025 — 1st Place Winner</div>
+            <ul>
+              <li>Developed an AI-powered interactive avatar for a VR campus experience.</li>
+              <li>Used an LLM and professor data to answer student questions in a natural, human-like way.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade-in" id="skills">
+      <div class="section-header">
+        <div class="section-icon">⚡</div>
+        <h2>skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="card skill-category">
+          <h3>// technical</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">Recommender Systems</span>
+            <span class="skill-tag">CNNs</span>
+            <span class="skill-tag">LLM Applications</span>
+            <span class="skill-tag">Sentiment Analysis</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Hugging Face</span>
+            <span class="skill-tag">Transformers</span>
+            <span class="skill-tag">LangChain</span>
+          </div>
+        </div>
+        <div class="card skill-category">
+          <h3>// soft_skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Collaboration</span>
+            <span class="skill-tag">Quick Learning</span>
+            <span class="skill-tag">Attention to Detail</span>
+            <span class="skill-tag">Leadership</span>
+            <span class="skill-tag">Adaptability</span>
+            <span class="skill-tag">Emotional Intelligence</span>
+          </div>
+        </div>
+        <div class="card skill-category">
+          <h3>// languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Arabic (Native)</span>
+            <span class="skill-tag">English (Fluent)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Mohammed Rashid Alharbi — CPIT 405 Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 
 </html>
