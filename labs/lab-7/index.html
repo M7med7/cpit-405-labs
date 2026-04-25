@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7: Unsplash API Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Lab-7</h1>
+            <p>Mohammed Rashid Alharbi<br>ID: 2239457</p>
+        </header>
+
+        <div class="controls-bar">
+            <label for="searchInput" class="api-label">Unsplash API</label>
+            <input type="text" id="searchInput" placeholder="Search for images (e.g. Makkah)..." value="Makkah">
+            <button id="btnXHR" class="action-btn">Search using XHR</button>
+            <button id="btnFetchPromise" class="action-btn">Search using fetch (promises)</button>
+            <button id="btnFetchAsync" class="action-btn">Search using fetch (async/await)</button>
+        </div>
+
+        <div id="imageGrid" class="image-grid">
+            <!-- Images will be inserted here dynamically -->
+        </div>
+
+        <div id="loadingIndicator" class="hidden">
+            <div class="spinner"></div>
+            <p>Loading images...</p>
+        </div>
+
+        <div id="errorMessage" class="hidden error-message">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
