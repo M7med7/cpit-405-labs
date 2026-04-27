@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dev Joke Generator — Fetch random programming jokes from a public API.">
+  <title>App 2: Dev Joke Generator — Mohammed Alharbi</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/apps.css">
+</head>
+
+<body>
+
+  <canvas id="matrix-canvas"></canvas>
+  <div class="scanline"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><span class="prompt">~/</span>m.alharbi</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">home</a>
+        <a href="labs.html">labs</a>
+        <a href="myworks.html">my_works</a>
+        <a href="contact.html">contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="app-layout">
+      <!-- Sidebar -->
+      <aside class="app-sidebar">
+        <div class="card">
+          <h3>// about_this_app</h3>
+          <p>This application fetches programming jokes from the public <b>JokeAPI</b>.</p>
+          <p>It demonstrates asynchronous JavaScript using the <code>fetch()</code> API to retrieve data from a third-party server, handling JSON responses, loading states, and error states.</p>
+          <p style="font-size: 0.8rem; color: var(--text-muted);">Data source: <a href="https://v2.jokeapi.dev/" target="_blank" rel="noopener noreferrer">v2.jokeapi.dev</a></p>
+          
+          <h3 style="margin-top: 2rem;">// portfolio_links</h3>
+          <div class="sidebar-links">
+            <a href="myworks.html" class="sidebar-btn">← Back to My Works</a>
+            <a href="app1.html" class="sidebar-btn">View App 1 →</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main App Content -->
+      <section class="app-main">
+        <div class="app-main-header">
+          <h2>Dev Joke Generator</h2>
+        </div>
+
+        <div class="joke-container">
+          <div class="joke-terminal" id="joke-output">
+            <!-- Initial state -->
+            <div style="color: var(--text-muted); font-family: var(--font-mono);">
+              > Ready to fetch data...
+              <br>> Awaiting command.
+            </div>
+          </div>
+
+          <div class="joke-controls">
+            <button class="submit-btn" id="fetch-btn">$ fetch_joke --type programming</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Mohammed Rashid Alharbi — CPIT 405 Portfolio</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/joke.js"></script>
+</body>
+
+</html>

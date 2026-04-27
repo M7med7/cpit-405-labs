@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Works — Custom JavaScript applications developed by Mohammed Rashid Alharbi.">
+  <title>My Works — Mohammed Alharbi</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <canvas id="matrix-canvas"></canvas>
+  <div class="scanline"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><span class="prompt">~/</span>m.alharbi</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">home</a>
+        <a href="labs.html">labs</a>
+        <a href="myworks.html" class="active">my_works</a>
+        <a href="contact.html">contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+
+    <section class="hero">
+      <div class="hero-badge"><span class="badge-dot"></span>Interactive Apps</div>
+      <h1>My <span class="gradient-text">Works</span></h1>
+      <p class="subtitle">Custom JavaScript applications.</p>
+    </section>
+
+    <section class="section fade-in" id="works">
+      <div class="section-header">
+        <div class="section-icon">🕹️</div>
+        <h2>ls ./my_works/</h2>
+      </div>
+      <div class="labs-grid">
+
+        <a href="app1.html" class="lab-card">
+          <span class="lab-number">App 01</span>
+          <h3>Matrix Snake Game</h3>
+          <p>A classic Snake game rendered on an HTML5 canvas. Eat the '0's and '1's to grow! Runs entirely locally.</p>
+          <div class="lab-tags">
+            <span class="lab-tag">JavaScript</span>
+            <span class="lab-tag">Canvas</span>
+            <span class="lab-tag">Game</span>
+          </div>
+          <span class="lab-link">./execute →</span>
+        </a>
+
+        <a href="app2.html" class="lab-card">
+          <span class="lab-number">App 02</span>
+          <h3>Dev Joke Generator</h3>
+          <p>Fetches a random programming-related joke from a public API using fetch(). Guaranteed to make you compile.
+          </p>
+          <div class="lab-tags">
+            <span class="lab-tag">JavaScript</span>
+            <span class="lab-tag">API</span>
+            <span class="lab-tag">Fetch</span>
+          </div>
+          <span class="lab-link">./execute →</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Mohammed Rashid Alharbi — CPIT 405 Portfolio</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Matrix Snake Game — A classic snake game built with vanilla JavaScript.">
+  <title>App 1: Snake Game — Mohammed Alharbi</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/apps.css">
+</head>
+
+<body>
+
+  <canvas id="matrix-canvas"></canvas>
+  <div class="scanline"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><span class="prompt">~/</span>m.alharbi</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">home</a>
+        <a href="labs.html">labs</a>
+        <a href="myworks.html">my_works</a>
+        <a href="contact.html">contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="app-layout">
+      <!-- Sidebar -->
+      <aside class="app-sidebar">
+        <div class="card">
+          <h3>// about_this_app</h3>
+          <p>A classic Snake game built with HTML5 Canvas and vanilla JavaScript.</p>
+          <p>Themed after the Matrix: your snake is a neon green line of code, and you must consume the bits ('0' or '1') to grow your length and increase your score.</p>
+          <p>This application does not use any third-party APIs.</p>
+          
+          <h3 style="margin-top: 2rem;">// portfolio_links</h3>
+          <div class="sidebar-links">
+            <a href="myworks.html" class="sidebar-btn">← Back to My Works</a>
+            <a href="app2.html" class="sidebar-btn">View App 2 →</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main App Content -->
+      <section class="app-main">
+        <div class="app-main-header">
+          <h2>Matrix Snake Game</h2>
+        </div>
+
+        <div class="game-container">
+          <div class="score-board">
+            <span>Score: <span id="score">0</span></span>
+            <span>High: <span id="high-score">0</span></span>
+          </div>
+
+          <div class="canvas-container">
+            <canvas id="snake-canvas" width="400" height="400"></canvas>
+            
+            <div id="start-screen" class="game-overlay">
+              <h3>Snake.js</h3>
+              <button class="submit-btn" id="start-btn">$ init_game ⏎</button>
+            </div>
+
+            <div id="game-over-screen" class="game-overlay hidden">
+              <h3>System Failure</h3>
+              <p style="margin-bottom: 1.5rem;">Score: <span id="final-score" style="color: var(--accent); font-weight: bold;">0</span></p>
+              <button class="submit-btn" id="restart-btn">$ reboot_system ⏎</button>
+            </div>
+          </div>
+          
+          <div class="controls-hint">
+            Use <b>Arrow Keys</b> to move. Consume '0's and '1's. Don't hit the walls or yourself.
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Mohammed Rashid Alharbi — CPIT 405 Portfolio</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/snake.js"></script>
+</body>
+
+</html>
