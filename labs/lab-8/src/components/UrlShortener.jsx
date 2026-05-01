@@ -164,9 +164,10 @@ function UrlShortener() {
             <a
               id="shortened-url"
               className="shortener__result-link"
-              href={shortenedUrl}
+              href={longUrl}
               target="_blank"
               rel="noopener noreferrer"
+              title={`Redirects to: ${longUrl}`}
             >
               {shortenedUrl}
             </a>
