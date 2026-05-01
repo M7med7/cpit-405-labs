@@ -1,0 +1,103 @@
+/* =============================================================
+   About Page Styles
+   ============================================================= */
+.about {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-xl);
+}
+
+.about__card {
+  max-width: 640px;
+  width: 100%;
+  background-color: var(--color-surface);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl) var(--space-xl) var(--space-2xl);
+}
+
+/* ---------- Typography ---------- */
+.about__title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  color: var(--color-text);
+}
+
+.about__subtitle {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+  color: var(--color-primary);
+}
+
+.about__text {
+  font-size: var(--font-size-base);
+  line-height: 1.75;
+  color: var(--color-text-muted);
+}
+
+.about__text code {
+  background-color: var(--color-bg);
+  padding: 2px 6px;
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+}
+
+/* ---------- Feature List ---------- */
+.about__features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.about__feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.about__feature-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ---------- Tech List ---------- */
+.about__tech-list {
+  list-style: disc inside;
+  padding-left: var(--space-sm);
+  color: var(--color-text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+/* ---------- Footer ---------- */
+.about__footer-text {
+  margin-top: var(--space-xl);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .about {
+    padding: var(--space-md);
+  }
+
+  .about__card {
+    padding: var(--space-lg);
+  }
+
+  .about__title {
+    font-size: var(--font-size-xl);
+  }
+}

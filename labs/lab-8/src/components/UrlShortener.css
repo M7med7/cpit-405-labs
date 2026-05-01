@@ -1,0 +1,169 @@
+/* =============================================================
+   UrlShortener Styles
+   ============================================================= */
+.shortener {
+  max-width: 640px;
+  margin: var(--space-2xl) auto;
+  padding: var(--space-xl) var(--space-xl) var(--space-2xl);
+  background-color: var(--color-surface);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+}
+
+/* ---------- Title ---------- */
+.shortener__title {
+  text-align: center;
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  margin-bottom: var(--space-xl);
+  color: var(--color-text);
+}
+
+/* ---------- Form ---------- */
+.shortener__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.shortener__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.shortener__label {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.shortener__input {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-size-base);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  transition: border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.shortener__input::placeholder {
+  color: #999;
+}
+
+.shortener__input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* ---------- Error ---------- */
+.shortener__error {
+  font-size: var(--font-size-sm);
+  color: #dc2626;
+  padding: var(--space-xs) var(--space-sm);
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: var(--border-radius-sm);
+}
+
+/* ---------- Button ---------- */
+.shortener__button {
+  align-self: center;
+  padding: var(--space-sm) var(--space-xl);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius-sm);
+  transition: background-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.shortener__button:hover:not(:disabled) {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.shortener__button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.shortener__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ---------- Result ---------- */
+.shortener__result {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.shortener__result-heading {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+.shortener__result-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+}
+
+.shortener__result-link {
+  flex: 1;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: var(--color-accent);
+  word-break: break-all;
+  text-align: center;
+}
+
+.shortener__result-link:hover {
+  text-decoration: underline;
+}
+
+.shortener__copy-btn {
+  padding: var(--space-xs) var(--space-md);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-accent);
+  background-color: transparent;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--border-radius-sm);
+  transition: background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.shortener__copy-btn:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .shortener {
+    margin: var(--space-md);
+    padding: var(--space-lg);
+  }
+
+  .shortener__title {
+    font-size: var(--font-size-xl);
+  }
+
+  .shortener__result-row {
+    flex-direction: column;
+  }
+}

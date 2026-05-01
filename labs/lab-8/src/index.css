@@ -1,0 +1,104 @@
+/* =============================================================
+   Global Styles — Link Shrinker
+   ============================================================= */
+
+/* ---------- CSS Custom Properties (Design Tokens) ---------- */
+:root {
+  /* Palette */
+  --color-primary: #8b4513;
+  --color-primary-dark: #6b3410;
+  --color-primary-light: #a0522d;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-bg: #f5f0eb;
+  --color-surface: #ffffff;
+  --color-text: #1e1e1e;
+  --color-text-muted: #555555;
+  --color-border: #d4c4b0;
+  --color-nav-bg: rgba(139, 69, 19, 0.9);
+  --color-nav-link: #f5f0eb;
+  --color-nav-link-hover: #ffffff;
+
+  /* Typography */
+  --font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-size-base: 16px;
+  --font-size-sm: 0.875rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* Layout */
+  --border-radius: 8px;
+  --border-radius-sm: 4px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+}
+
+/* ---------- Reset & Base ---------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+/* ---------- Utility ---------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
