@@ -1,0 +1,11 @@
+```mermaid
+erDiagram
+    products {
+        int id PK
+        varchar name
+        text description
+        decimal price
+        varchar image_path
+        timestamp created_at
+    }
+```

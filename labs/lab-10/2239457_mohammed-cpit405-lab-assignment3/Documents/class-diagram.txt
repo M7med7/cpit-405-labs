@@ -1,0 +1,21 @@
+```mermaid
+classDiagram
+    class Product {
+        -PDO db
+        +__construct(pdo)
+        +getAllProducts() array
+        +addProduct(name, description, price, image_path) bool
+        +deleteProduct(id) bool
+    }
+    
+    class ProductController {
+        -Product model
+        +__construct()
+        +handleRequest()
+        +getProducts()
+        +createProduct()
+        +deleteProduct()
+    }
+
+    ProductController --> Product : uses
+```

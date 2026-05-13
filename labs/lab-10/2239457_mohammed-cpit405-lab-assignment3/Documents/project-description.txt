@@ -1,0 +1,18 @@
+# Product Management System - Assignment 3
+
+## Description
+This project is a dynamic web application built using PHP and MariaDB following the Model-View-Controller (MVC) architectural pattern. It serves as a product management dashboard where users can view, add, and delete products dynamically.
+
+## Key Features
+- **MVC Architecture**: Code is logically separated into Models, Views, and Controllers.
+- **Database Integration**: PDO is used for secure MariaDB connectivity and query execution.
+- **AJAX Support**: Adding and deleting products is done asynchronously without page reloads.
+- **File Upload**: Users can upload images when adding a new product.
+- **Session & Cookies**: The application utilizes cookies to track when the user last visited the site and sessions for storing temporary messages/status.
+- **Object-Oriented Programming (OOP)**: The database logic is encapsulated within a `Product` class.
+
+## Setup Instructions
+1. Import the `Documents/db-install-statements.sql` into your local MariaDB/MySQL server.
+2. Ensure you have Apache and PHP running (e.g., using XAMPP or MAMP).
+3. Place this folder in your web server's root directory (`htdocs` or `www`).
+4. Navigate to `views/index.php` to access the application.
